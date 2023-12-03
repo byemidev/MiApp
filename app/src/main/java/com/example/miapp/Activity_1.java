@@ -19,7 +19,7 @@ public class Activity_1 extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                Intent i1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/byemidev"));
+                Intent i1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/byemidev/MiApp"));
                 startActivity(i1);
             }
         });
