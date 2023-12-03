@@ -4,6 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3E3942"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
     tools:context=".Activity_1">
 
+    <Button
+        android:id="@+id/btn_github"
+        android:layout_width="412dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="36dp"
+        android:background="#FF000000"
+        android:text=".. date una vuelta por mis proyectos."
+        app:backgroundTint="#69C3BF"
+        app:cornerRadius="0px"
+        app:icon="@drawable/github_fill"
+        app:iconPadding="-50dp"
+        app:iconSize="45dp"
+        app:iconTint="#3E3942"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_linkedin"
+        android:layout_width="412dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:isScrollContainer="false"
+        android:text="..aqui puedes ver mi perfil laboral!"
+        app:backgroundTint="@color/color1"
+        app:cornerRadius="0px"
+        app:icon="@drawable/linkedin_box_fill"
+        app:iconPadding="-50dp"
+        app:iconSize="45dp"
+        app:iconTint="#3E3942"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_github"
+        app:rippleColor="#B52B2B" />
 </androidx.constraintlayout.widget.ConstraintLayout>
