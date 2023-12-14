@@ -8,40 +8,131 @@
     android:scrollbarAlwaysDrawHorizontalTrack="false"
     tools:context=".Activity_1">
 
-    <Button
-        android:id="@+id/btn_github"
-        android:layout_width="412dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="36dp"
-        android:background="#FF000000"
-        android:text=".. date una vuelta por mis proyectos."
-        app:backgroundTint="#69C3BF"
-        app:cornerRadius="0px"
-        app:icon="@drawable/github_fill"
-        app:iconPadding="-50dp"
-        app:iconSize="45dp"
-        app:iconTint="#3E3942"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_linkedin"
-        android:layout_width="412dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="20dp"
-        android:isScrollContainer="false"
-        android:text="..aqui puedes ver mi perfil laboral!"
-        app:backgroundTint="@color/color1"
-        app:cornerRadius="0px"
-        app:icon="@drawable/linkedin_box_fill"
-        app:iconPadding="-50dp"
-        app:iconSize="45dp"
-        app:iconTint="#3E3942"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_github"
-        app:rippleColor="#B52B2B" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_github"
+                android:layout_width="412dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="36dp"
+                android:background="#FF000000"
+                android:text="MIS PROYECTOS "
+                app:backgroundTint="#69C3BF"
+                app:cornerRadius="0px"
+                app:icon="@drawable/github_fill"
+                app:iconPadding="-50dp"
+                app:iconSize="45dp"
+                app:iconTint="#3E3942"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_linkedin"
+                android:layout_width="412dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:isScrollContainer="false"
+                android:text="LINKEDIN "
+                app:backgroundTint="@color/color1"
+                app:cornerRadius="0px"
+                app:icon="@drawable/linkedin_box_fill"
+                app:iconPadding="-50dp"
+                app:iconSize="45dp"
+                app:iconTint="#3E3942"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_github"
+                app:rippleColor="#B52B2B" />
+
+            <Button
+                android:id="@+id/btn_CV"
+                android:layout_width="412dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:isScrollContainer="false"
+                android:text="DESCARGA MI CV"
+                app:backgroundTint="@color/color2"
+                app:cornerRadius="0px"
+                app:icon="@drawable/bxs_file"
+                app:iconPadding="-50dp"
+                app:iconSize="45dp"
+                app:iconTint="#3E3942"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_github"
+                app:rippleColor="#B52B2B" />
+
+            <Button
+                android:id="@+id/btn_pyt_v_1"
+                android:layout_width="412dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:isScrollContainer="false"
+                android:text="Documentacion v_1"
+                app:backgroundTint="#713EC1"
+                app:cornerRadius="0px"
+                app:icon="@drawable/bx_code_alt"
+                app:iconPadding="-50dp"
+                app:iconSize="45dp"
+                app:iconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_github"
+                app:rippleColor="#B52B2B" />
+
+            <Button
+                android:id="@+id/btn_pyt_v_2"
+                android:layout_width="412dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:isScrollContainer="false"
+                android:text="Documentacion v_2"
+                app:backgroundTint="#47267A"
+                app:cornerRadius="0px"
+                app:icon="@drawable/bx_code_alt"
+                app:iconPadding="-50dp"
+                app:iconSize="45dp"
+                app:iconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_github"
+                app:rippleColor="#B52B2B" />
+
+            <Button
+                android:id="@+id/btn_pyt_v_3"
+                android:layout_width="412dp"
+                android:layout_height="125dp"
+                android:layout_marginTop="20dp"
+                android:isScrollContainer="false"
+                android:text="Documentacion v_3"
+                app:backgroundTint="#201137"
+                app:cornerRadius="0px"
+                app:icon="@drawable/bx_code_alt"
+                app:iconPadding="-50dp"
+                app:iconSize="45dp"
+                app:iconTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_github"
+                app:rippleColor="#B52B2B" />
+
+        </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
