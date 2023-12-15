@@ -19,6 +19,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/txtViewActivity_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="este texto va a cambiar"
+                android:textColor="@color/color4"></TextView>
+
             <Button
                 android:id="@+id/btn_github"
                 android:layout_width="412dp"
@@ -63,6 +71,7 @@
                 android:layout_marginTop="20dp"
                 android:isScrollContainer="false"
                 android:text="DESCARGA MI CV"
+                android:visibility="invisible"
                 app:backgroundTint="@color/color2"
                 app:cornerRadius="0px"
                 app:icon="@drawable/bxs_file"
@@ -76,12 +85,12 @@
                 app:rippleColor="#B52B2B" />
 
             <Button
-                android:id="@+id/btn_pyt_v_1"
+                android:id="@+id/btn_switch_to_activity2"
                 android:layout_width="412dp"
                 android:layout_height="125dp"
                 android:layout_marginTop="20dp"
                 android:isScrollContainer="false"
-                android:text="Documentacion v_1"
+                android:text="Descripcion de MiApp"
                 app:backgroundTint="#713EC1"
                 app:cornerRadius="0px"
                 app:icon="@drawable/bx_code_alt"
@@ -101,6 +110,7 @@
                 android:layout_marginTop="20dp"
                 android:isScrollContainer="false"
                 android:text="Documentacion v_2"
+                android:visibility="invisible"
                 app:backgroundTint="#47267A"
                 app:cornerRadius="0px"
                 app:icon="@drawable/bx_code_alt"
@@ -120,6 +130,7 @@
                 android:layout_marginTop="20dp"
                 android:isScrollContainer="false"
                 android:text="Documentacion v_3"
+                android:visibility="invisible"
                 app:backgroundTint="#201137"
                 app:cornerRadius="0px"
                 app:icon="@drawable/bx_code_alt"

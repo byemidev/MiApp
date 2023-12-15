@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -49,18 +50,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    //validar email
     private boolean validarEmail(String email) {
         Pattern pattern = Patterns.EMAIL_ADDRESS;
         return pattern.matcher(email).matches();
     }
-
+    //validar contraseña
     private boolean validarContrasena(String contrasena) {
         return contrasena != null && contrasena.length() >= 6;
     }
-
+    //cambiar a Activity_1
     public void switchToActivity_1(){
         Intent i = new Intent(this, Activity_1.class);
         startActivity(i);
+    }
+
+    //Devolver mi correo para que salga en Activity_1 como TextView en Top de mi layout
+    public static final String REQUEST_RESULT= "REQUEST_RESULT";
+    public void switch1(View view){
+        EditText email = findViewById(R.id.editTextTextEmailAddress);
+
+        String text = email.getText().toString();
+
+        Intent i = new Intent(this, Activity_1.class);
+        i.putExtra(Intent.EXTRA_TEXT, text);
+        startActivityForResult(i, 1);
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode==RESULT_OK){
+            Toast.makeText(this, Integer.toString(data.getIntExtra  (REQUEST_RESULT, 0)), Toast.LENGTH_LONG).show();
+        }
     }
 }
